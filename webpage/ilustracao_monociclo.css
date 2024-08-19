@@ -1,0 +1,21 @@
+body {
+    align-items: center;
+}
+
+.quadros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quadrinho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.quadrinhos img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+}

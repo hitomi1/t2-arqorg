@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="arq_monociclo.css">
+    <title>Arquitetura Monociclo</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="assets/ilustracao_processador.jpg" alt="Imagem para ilustrar um processador" class="top-image">
+
+        <div class="overlay">
+            <div class="box_tipo_1">
+                <nav class="navbar">
+                    <ul>
+                        <div class="navbar_alinhamento">
+                            <li><a class="link" href='index.html'>Início</a></li>
+                            <li><a class="link" href='arq_monociclo.html'>Descrição</a></li>
+                            <li><a class="link" href='ilustracao_monociclo.html'>Ilustração</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="box_tipo_2">
+
+            </div>
+
+            <div class="box_tipo_3">
+                <p>
+                    <a href="https://pixabay.com/pt/illustrations/processador-cpu-computador-chip-2217771/" target="_blank">Autor da
+                        Imagem</a>
+                </p>
+            </div>
+
+        </div>
+    </header>
+
+    <h1>Introdução</h1>
+    <p>
+        No mundo moderno, os computadores desempenham um papel fundamental em praticamente todos os aspectos da vida
+        cotidiana. Desde o momento em que despertamos até o instante em que vamos dormir, esses dispositivos silenciosos
+        e eficientes estão presentes, moldando e facilitando nossas atividades diárias. No trabalho, os computadores são
+        ferramentas indispensáveis para uma vasta gama de tarefas, desde a criação de documentos e o gerenciamento de
+        projetos até a comunicação por meio de e-mails e videoconferências. Em casa, eles oferecem acesso à informação,
+        entretenimento e serviços essenciais, desde a compra de produtos e serviços até a educação e o lazer.
+    </p>
+    <p>
+        A influência dos computadores vai além das atividades pessoais e profissionais, estendendo-se também ao setor
+        público e à indústria. No setor de saúde, por exemplo, eles são cruciais para o gerenciamento de registros
+        médicos e a realização de diagnósticos avançados. Na educação, facilitam o aprendizado online e o
+        desenvolvimento de novos métodos pedagógicos. Além disso, a automação industrial e a inovação tecnológica,
+        impulsionadas pelos computadores, estão redefinindo a produção e a eficiência em diversos setores.
+    </p>
+    <p>
+        Portanto, compreender o papel dos computadores em nosso dia a dia não é apenas uma questão de reconhecer sua
+        ubiquidade, mas também de apreciar como eles transformaram a maneira como vivemos, trabalhamos e interagimos. O
+        impacto dos computadores é profundo e abrangente, refletindo seu papel essencial na construção de um mundo cada
+        vez mais conectado e eficiente.
+    </p>
+    <p>
+        Mas e como esses dispositivos realizam essas tarefas ?
+    </p>
+
+    <h2>Tipos de Arquiteturas</h2>
+    <ol>
+        <div class="arq_conteiner">
+            <div>
+                <li>Monociclo</li>
+                <p>
+                <ul>
+                    <p>
+                        <li>
+                            Descrição: Na arquitetura monociclo, cada instrução é executada em um único ciclo de clock.
+                            Isso
+                            significa
+                            que todas as operações necessárias para executar uma instrução—como buscar a instrução da
+                            memória,
+                            decodificar a instrução, buscar operandos, executar a operação e escrever o resultado de
+                            volta
+                            na
+                            memória—são realizadas em um único ciclo de clock.
+                        </li>
+                    </p>
+                    <p>
+                        <li>
+                            Vantagem: Simplicidade no design do processador, já que todos os tipos de instrução têm o
+                            mesmo
+                            tempo de
+                            execução.
+                        </li>
+                    </p>
+                    <p>
+                        <li>
+                            Desvantagem: Ineficiência, pois o ciclo de clock deve ser suficientemente longo para
+                            acomodar a
+                            instrução
+                            mais complexa, o que pode resultar em ciclos de clock mais lentos e, consequentemente, em um
+                            desempenho
+                            geral mais baixo.
+                        </li>
+                    </p>
+                    <p>
+                        <li>
+                            Aplicações: Usado principalmente em projetos de processadores mais simples ou educacionais,
+                            onde
+                            a
+                            ênfase
+                            está na clareza e simplicidade do design.
+                        </li>
+                    </p>
+                </ul>
+                </p>
+            </div>
+
+            <div>
+                <li>Multiciclo</li>
+                <p>
+                <ul>
+                    <p>
+                        <li>
+                            Descrição: Na arquitetura multiciclo, a execução de uma instrução é dividida em vários
+                            ciclos de
+                            clock.
+                            Cada fase da execução da instrução—busca, decodificação, execução, etc.—ocorre em ciclos
+                            separados.
+                            A
+                            quantidade de ciclos necessários para executar uma instrução depende da complexidade da
+                            instrução.
+                        </li>
+                    </p>
+                    <p>
+                        <li>
+                            Vantagem: Permite que o processador use ciclos de clock mais curtos e, portanto, pode ser
+                            mais
+                            eficiente
+                            em termos de desempenho em comparação com a arquitetura monociclo. Também possibilita uma
+                            melhor
+                            utilização dos recursos do processador.
+                        </li>
+                    </p>
+                    <p>
+                        <li>
+                            Desvantagem: A complexidade do design é maior, pois é necessário gerenciar os diferentes
+                            estágios de
+                            execução e controlar o fluxo de dados entre eles.
+                        </li>
+                    </p>
+                    <p>
+                        <li>
+                            Aplicações: Comum em processadores de médio porte e em projetos de processadores que
+                            necessitam
+                            de
+                            um
+                            equilíbrio entre complexidade e desempenho.
+                        </li>
+                    </p>
+                </ul>
+                </p>
+            </div>
+
+            <div>
+                <li>Pipeline</li>
+                <p>
+                <ul>
+                    <p>
+                        <li>
+                            Descrição: Na arquitetura pipeline, a execução de instruções é dividida em etapas ou
+                            estágios
+                            que
+                            são
+                            realizados em paralelo. Cada estágio do pipeline realiza uma parte específica do processo de
+                            execução da
+                            instrução (como busca, decodificação, execução e escrita). Diferente do multiciclo, onde uma
+                            instrução é
+                            completada em vários ciclos de clock, no pipeline, múltiplas instruções são processadas
+                            simultaneamente,
+                            com cada uma ocupando um estágio diferente do pipeline.
+                        </li>
+                    </p>
+                    <p>
+                        <li>
+                            Vantagem: Aumenta significativamente o throughput do processador ao permitir que várias
+                            instruções
+                            sejam
+                            processadas simultaneamente, o que melhora o desempenho geral.
+                        </li>
+                    </p>
+                    <p>
+                        <li>
+                            Desvantagem: Introduz complexidades adicionais, como o gerenciamento de dependências entre
+                            instruções e
+                            o tratamento de casos de desvio e conflitos. Além disso, o pipeline pode sofrer de "hazards"
+                            (problemas
+                            de interdependência), como hazards de dados, controle e estrutura.
+                        </li>
+                    </p>
+                    <p>
+                        <li>
+                            Aplicações: Amplamente utilizado em processadores modernos, desde microprocessadores em
+                            computadores
+                            pessoais até processadores em sistemas embarcados e servidores, devido à sua capacidade de
+                            melhorar
+                            o
+                            desempenho e a eficiência.
+                        </li>
+                    </p>
+            </div>
+            </ul>
+            </p>
+        </div>
+    </ol>
+
+    <h3>A Arquitetura Monociclo</h3>
+    <p>
+        A primeira etapa da arquitetura monociclo é chamada de busca de insrução, onde o primeiro passo é recuperar a
+        instrução apontada pelo Program Counter (PC), um registrador especial que guarda o endereço da próxima
+        instrução. Em seguida, o PC é utilizado para acessar a memória e obter o conteúdo da instrução. Esse conteúdo é
+        copiado e temporariamente armazenado no Instruction Register (IR), um registrador específico para esse
+        propósito, contendo o código de operação e os operandos da instrução para decodificação e execução posterior.
+    </p>
+
+    <p> Após isso, ocorre a etapa de decodificação, na qual o código de operação é
+        interpretado para determinar a operação específica a ser executada. Se houver necessidade de operandos
+        adicionais, eles podem ser obtidos a partir do banco de registradores, ou do valor imediato
+    </p>
+
+    <p>
+        Na terceira etapa, a instrução é executada por meio dos sinais de controle gerados com base na instrução,
+        realizando a operação desejada, como cálculos, transferência de dados ou controle de fluxo.
+    </p>
+
+    <p>
+        Na próxima etapa, caso necessário, há o acesso a memória para escrever ou ler valores.
+    </p>
+
+    <p>
+        Na última etapa, o resultado da operação, ou o valor lido na memória é escrito novamente no banco de
+        registradores.
+    </p>
+</body>
+
+</html>

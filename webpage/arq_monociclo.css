@@ -1,0 +1,62 @@
+body {
+    background-color: #ffffff;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.cabecalho {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: absolute;
+    bottom: 0;
+}
+
+.box_tipo_1 {
+    height: 20%;
+    width: 100%;
+    background-color: #ffffff
+}
+
+.box_tipo_2 {
+    height: 40%;
+    width: 100%;
+}
+
+.box_tipo_3 {
+    height: 40%;
+    width: 100%;
+    background-color: #ffffff
+}
+
+.navbar {
+    background-color: rgb(8, 153, 182);
+}
+
+.navbar_alinhamento {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    color: black;
+}
+
+.top-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.arq_conteiner {
+    display: flex;
+}
